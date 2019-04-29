@@ -1,0 +1,35 @@
+/*Имеются два дома размерами a на b и c на d. Размеры вводятся польователем с консоли.     
+Проверить, помещаются ли эти дома на участке размерами e на f.     
+Стороны домов - параллельны сторонам участка, в остальном размещение может быть любым.*/
+
+package _1_procedural;
+
+import java.util.Scanner;
+
+public class Houses {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Длина первого дома");
+        int a =scanner.nextInt(); //lenght for house 1
+        System.out.println("Ширина первого дома");
+        int b= scanner.nextInt(); //width for house 1
+        System.out.println("Длина второго дома");
+        int c =scanner.nextInt();//lenght for house 2
+        System.out.println("Ширина второго дома");
+        int d =scanner.nextInt();//width for house 2
+        System.out.println("Длина участка");
+        int e =scanner.nextInt();//lenght for territory
+        System.out.println("Ширина участкаа");
+        int f =scanner.nextInt();//width for territory
+        int hl = a+c;
+        int hw = b+d;
+            if(hl<e && hw<f){
+                System.out.println("Дома поместятся");
+        }
+            else {
+            System.out.println("Дома не поместятся");
+        }
+
+
+    }
+}
