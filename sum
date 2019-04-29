@@ -1,0 +1,19 @@
+/*Написать программу, вычисляющую сумму цифр введённого пользователем целого числа.*/
+package _1_procedural;
+
+import java.util.Scanner;
+
+public class sum {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Число");
+        int a =scanner.nextInt();
+        int b =a/100;
+        int c =b*100;
+        int d =(a-c)/10;
+        int e =d*10;
+        int f =a-(c+e);
+        int s =b+d+f;
+        System.out.println("Сумма цифр введённого числа "+ s);
+    }
+}
